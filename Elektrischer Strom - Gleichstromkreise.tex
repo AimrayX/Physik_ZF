@@ -1,0 +1,214 @@
+\section{Elektrischer Strom - Gleichstromkreise}
+\begin{flushleft}
+
+Der Fluss von elektrischen Ladungen wird als \textbf{elektrischen Strom} bezeichnet. \\[1ex]
+
+\subsection{elektrischer Strom und die Bewegung von Ladung}
+\textbf{Definition Strom:}\\
+Die Rate, mit der elektrische Ladung durch einen Leiterquerschnitt fliesst.
+\[
+    I = \frac{\Delta q}{\Delta t} \hspace{3mm} [I] = \text{Ampère} = A = \frac{C}{s}
+\]
+\textbf{Konvention:} Strom ist positiv, wenn er durch positive Ladungsträger in positiver Richtung erzeugt wird, resp. durch negative Ladungsträger in negative Richtung.
+\[
+    \Delta q = q\left( \frac{n}{v} \right) \cdot A \cdot v_d \cdot \Delta t \hspace{5mm} v_d: \text{Driftgeschwindigkeit}
+\]
+\begin{formulabox}
+    \[
+        \Rightarrow I = \frac{\Delta q}{\Delta t}  = q\left( \frac{n}{v} \right) \cdot A \cdot v_d
+    \]
+\end{formulabox}
+\textbf{Stromdichte:}
+\begin{formulabox}
+    \[
+        \Vec{j} = q \left( \frac{n}{v}\right) \cdot \Vec{v_d}
+    \]
+\end{formulabox}
+\textbf{Strom durch eine Fläche $\Vec{A}$:}
+\begin{formulabox}
+    \[
+        I = \int_A \Vec{j} \cdot d \Vec{A} = \int_A \Vec{j} \cdot \hat{e_n} \cdot dA
+    \]
+\end{formulabox}
+
+\subsection{Widerstand und Ohm'sches Gesetz}
+\textbf{Ohm'sches Gesetz}
+\begin{formulabox}
+    \[
+    U = R \cdot I \hspace{1mm} ; \hspace{5mm} R = \text{konst.}
+    \]
+\end{formulabox}
+\textbf{Definition des Widerstand $R$:}
+\[
+    R = \frac{U}{I} \hspace{3mm} [R] = \text{Ohm} = \Omega = \frac{V}{A}
+\]
+\textbf{Widerstand für leitfähigen Draht} mit $r$ als spezifischer Widerstand:
+\[
+    R = r \cdot \frac{l}{A} \hspace{3mm}
+\]
+\textbf{Vektorielle Form} des Ohm'schen Gesetzes:
+\begin{formulabox}
+    \[
+        \Vec{j} = \sigma \Vec{E}
+    \]
+\end{formulabox}
+$\sigma$ als elektr. Leitfähigkleit $\sigma = \frac{1}{r} = \frac{1}{\rho}$ \hspace{3mm} $\left[ \frac{s}{m}\right] = \left[ \frac{1}{\Omega m}\right]$
+\[
+    I = \sigma EA = \frac{1}{r} \frac{E \cdot l \cdot A}{l} = \frac{1}{r} U \frac{A}{l} = \frac{U}{R}
+\] \\[1ex]
+\textbf{Temperaturabhängiger Widerstand:} \\
+$r_0$ sei der spezifische Widerstand bei Temperatur $T_0$ (i.d.R bei 20°)
+\[
+    \alpha = \frac{\left(r-r_0\right) / r_0}{T - T_0} \hspace{5mm} \alpha = \text{Temperaturkoeffizient}
+\]
+\subsection{Energetische Betrachtung elektrischer Stromkreise}
+Verlust von \textbf{potenzieller Energie $\Delta E_{el}$:}
+\[
+    \Delta E_{el} = \Delta q \left( \phi_B - \phi_A \right) = \Delta q (-U)
+\]
+\begin{formulabox}
+    \[
+    \Rightarrow -\frac{\Delta E_{el}}{\Delta t} = \frac{\Delta q}{\Delta t} U
+ = IU    \]
+\end{formulabox}
+Verlust von Energie $\Delta E_{el}$ wird in therm. Energie (Joul'sche Wärme) umgewandelt:
+\\[1ex]
+\[
+    P = IU \hspace{5mm} \text{Im Leiterstück umgesetzte Leistung}
+\] 
+\\[1ex]
+Für einen \textbf{Ohm'schen Widerstand} gilt:
+\begin{formulabox}
+    \[
+        P = IU_R = RI^2 = \frac{U_R^2}{R}
+    \]
+\end{formulabox}
+
+\subsection{Spannungsquellen und Quellenspannung}
+Spannungsquellen führen einem Stromkreis elektrische Energie hinzu. \\
+\textbf{Leistung einer Spannungsquelle:}
+\[
+    P = \frac{(\Delta q) U_Q}{\Delta t} = I U_Q
+\] 
+\\[1ex]
+
+\textbf{Ideale Spannungsquellen} weisen an den Polen, unabhängig vom Stromfluss, immer die selbe Quellspannung $U_Q$ auf:
+\[
+    I = \frac{U_Q}{R}
+\]
+\\[1ex]
+\textbf{Reale Spannungsquellen} weisen eine Klemmspannung $U_K$ auf mit $U_K \neq U_Q$:
+\[
+    \phi_A = \phi_B + U_Q - R_{in} \cdot I \ ; \hspace{5mm} R_{in} = \text{Innenwiderstand}
+\]
+\\[1ex]
+\textbf{Klemmspannung:}
+\begin{formulabox}
+    \[
+        \phi_A - \phi_B = U_Q - R_{in} \cdot I
+    \]
+\end{formulabox}
+\[
+    RI = \phi_A - \phi_B = U_Q - R_{in} I \rightarrow I = \frac{U_Q}{R + R_{in}}
+\]
+\\[1ex]
+\textbf{In der Batterie gespeicherte Energie:}
+\begin{formulabox}
+    \[
+        \Rightarrow E_{el} = q\cdot U_Q
+    \]
+\end{formulabox}
+
+\subsection{Zusammenschalten von Widerstände}
+Für \textbf{Parallelschaltung} gilt:
+\[
+    I = \frac{U_R}{R} = \frac{U_R}{R_1} + \frac{U_R}{R_2} + ... + \frac{U_R}{R_i} = U_R \left( \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_i} \right)
+\]
+\textbf{Ersatzkapazität für parallel geschaltete Widerstände}
+\begin{formulabox}
+    \[
+       \Rightarrow R_{eq} = \left( \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_i} \right)^{-1}
+    \]
+\end{formulabox}
+
+Für \textbf{Reihen-/ Serienschaltung} gilt:
+\[
+    U_R = U_1 + U_2 = R_1 I + R_2 I = I(R_1 + R_2)
+\]
+\textbf{Ersatzkapazität für in Reihe geschaltete Widerstände}
+\begin{formulabox}
+    \[
+       \Rightarrow R_{eq} = ( R_1 + R_2 + ... + R_i)
+    \]
+\end{formulabox}
+
+\subsection{Die Kirchhoff'schen Regeln}
+Anwendbar bei \textbf{stationärem (Zeit unabhängigen)} Stromfluss. \\[1ex]
+\hspace{5mm} \textbf{1. Knotenregel:} \\
+\hspace{10mm} Summe aller hineinfliessenden Ströme ist \textbf{gleich} der Summe aller \\ \hspace{10mm} herausfliessenden
+\\[2ex]
+\hspace{5mm} \textbf{2. Maschenregel:} \\
+\hspace{10mm} Summe aller Spannungen beim Durchlauf einer geschlossenen Schleife ist \\ \hspace{10mm} gleich \textbf{Null}
+\\[2ex]
+
+\subsection{RC-Schaltkreise}
+Schaltungen mit Ohm'schen Widerstand R und Kondensator C. \\[2ex]
+
+\textbf{Entladen eines Kondensators:} \\
+Für $t = 0$ (Schalter geschlossen $\rightarrow$ entladen) gilt:
+\[
+    U_{C,0} = \frac{q_0}{C} 
+\]
+\hspace{5mm} \textbf{Strom durch $R$:}
+\[
+    I_0 = \frac{U_{C,0}}{R} =\frac{q_0}{RC} \rightarrow  I(t) = -\frac{dq(t)}{dt}
+\]
+\hspace{5mm} \textbf{Maschenregel:}
+\[
+    \frac{q(t)}{C} - RI(t) = 0 \rightarrow \frac{q(t)}{C} + R\frac{dq(t)}{dt} = 0 \rightarrow \frac{dq(t)}{dt} = - \frac{1}{RC}q(t)
+\]
+\\[1ex]
+\begin{formulabox}
+    \[
+        q(t) = q_0 e^{-\frac{t}{RC}} \Rightarrow q_0 e^{-\frac{t}{\tau}} \hspace{5mm} \tau = RC
+    \]
+\end{formulabox}
+\hspace{5mm} \textbf{Für dem Strom gilt:}
+\begin{formulabox}
+    \[
+        I = -\frac{dq(t)}{dt} = \frac{q_0}{RC}e^{-\frac{t}{\tau}} = I_0 e^{-\frac{t}{\tau}}
+    \]
+\end{formulabox}
+
+\textbf{Aufladen eines Kondensators:} \\
+Füt $t = 0$ (Schalter geschlossen $\rightarrow$ aufladen) gilt:
+\\[1ex]
+\hspace{5mm} \textbf{Maschenregel:}
+\[
+    U - I(t) R - \frac{q(t)}{C} = 0
+\]
+\hspace{5mm} Mit \textbf{Strom $I$:}
+\[
+    I(t) = \frac{dq(t)}{dt} \rightarrow U - R\frac{dq(t)}{dt} - \frac{q(t)}{C} = 0
+\]
+\begin{formulabox}
+    \[
+    q(t) = CU\left( 1 - e^{-\frac{t}{\tau}} \right) = q_E\left( 1 - e^{-\frac{t}{\tau}} \right) \hspace{5mm} q_E = \text{max. Ladung}
+    \]
+\end{formulabox}
+\hspace{5mm} \textbf{Für dem Strom gilt:}
+\begin{formulabox}
+    \[
+        I(t) = \frac{dq(t)}{dt} = CU \left( \frac{1}{RC} - e^{-\frac{t}{\tau}} \right) = \frac{U}{R}e^{-\frac{t}{\tau}} = I_Ae^{-\frac{t}{\tau}}
+    \]
+\end{formulabox}
+\vspace{2ex}
+
+\subsection{Energiebilanz beim Aufladen eines Kondensators}
+Ladung $q_E = CU$ fliesst beim Aufladen durch die Batterie \\[1ex]
+Dabei Verrichtete Arbeit: $W = q_E \cdot U = CU^2$ \\[1ex]
+\hspace{5mm} $\rightarrow$ 50\% elektrische Energie: $E_{el} = \frac{1}{2} q_E \cdot U = \frac{1}{2} CU^2$ \\[1ex]
+\hspace{5mm} $\rightarrow$ 50\% thermische Energie
+\\[1ex]
+
+\end{flushleft}

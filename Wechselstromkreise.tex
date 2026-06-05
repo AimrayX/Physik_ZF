@@ -1,0 +1,194 @@
+\section{Wechselstromkreise}
+\begin{flushleft}
+
+\subsection{Wechselspannung an einem Ohm'schen Widerstand}
+\textbf{Wechselstrom}generatoren erzeugen eine induzierte Spannung
+\[
+    U_{ind}(t) = \underbrace{U_{max}}_{\propto \ n\cdot |\Vec{B}||\Vec{A}|\cdot \omega} \cos{(\omega t)}
+\]
+\hspace{5mm}aus Induktionsgesetz:
+\[
+    U_{ind} = -\frac{d\Phi_{mag}}{dt} \Rightarrow \Phi_{mag} = n\cdot |\Vec{B}||\Vec{A}|\cos{(\omega t)}
+\]
+
+\textbf{Ohm'scher Widerstand $R$ im Wechselstromkreis:}
+\[
+    U_R(t) = U_{ind}(t) = U_{max}\cos{(\omega t)}
+\]\[
+    \Rightarrow U_{R,max}\cos{(\omega t)} = R I(t)
+\]
+\begin{formulabox}
+    \[
+        I(t) = \frac{U_{R,max}}{R}\cos{(\omega t)} = I_{max}\cos{(\omega t)}
+    \]
+\end{formulabox}
+
+\textbf{Die an R umgesetzte Leistung:}
+\begin{formulabox}
+    \[
+        P(t) = R\cdot I(t)^2 = R^2_{max}\cos{(\omega t)}
+    \]
+\end{formulabox}
+
+\textbf{Mittelwert der Leistung einer Schwingungsperiode:}
+\begin{formulabox}
+    \[
+        \langle P \rangle = R\langle I^2 \rangle = RI^2_{max} \langle \cos{(\omega t)} \rangle = \frac{1}{2} RI^2_{max}
+    \]
+\end{formulabox}
+
+Beim Wechselstrom sind nicht Maximalwerte wichtig sondern die \textbf{Effektivwerte}:
+\\[2ex]
+\textbf{Definition der Effektiven Stromstärke:}
+\begin{formulabox}
+    \[
+        I_{eff} = \sqrt{\langle I^2 \rangle}
+    \]
+\end{formulabox}
+\[
+    \langle I^2 \rangle = I^2_{max}\langle \cos{(\omega t)} \rangle = \frac{1}{\sqrt{2}}I^2_{max}
+\]
+\begin{formulabox}
+    \[
+        I_{eff} = \frac{1}{\sqrt{2}} \approx 0.7071  \ I_{max}
+    \]
+\end{formulabox}
+
+\textbf{Mittlere an R umgesetzte Leistung:}
+\begin{formulabox}
+    \[
+        \langle P \rangle = RI^2_{eff}
+    \]
+\end{formulabox}
+
+\textbf{Mittlere Leistung vom Generator:}
+\[
+    \langle P \rangle = U_{max} \cdot I_{max} \langle \cos^2{(\omega t)} \rangle \Rightarrow \frac{1}{2} U_{max} I_{max}
+\]
+\begin{formulabox}
+    \[
+        \langle P \rangle = U_{eff} \cdot I_{eff}
+    \]
+\end{formulabox}
+
+\subsection{Wechselstromkreise}
+Spule und Kondensatoren zeigen in Wechselstromkreisen, aufgrund der sich ständig ändernden Stromflussrichtung, ein anderes Verhalten als in Gleichstromkreisen
+
+\subsection{Spulen in Wechselstromkreisen}
+(Vernachlässigung des Eigenwiderstands vom Spulendraht) \\[1ex]
+\textbf{Spannungsabfall einer Spule:}
+\[
+    U_L = L \frac{dI}{dt}
+\]
+\hspace{5mm} Es gilt:
+\[
+    U_L(t) = U_{L,max} \cos{( \omega t)} \ != L \frac{dI}{dt} \ \iff \ \frac{dI}{dt} = \frac{U_{L,max} \cos{( \omega t)}}{L}
+\]
+\hspace{5mm} \textbf{Stromstärke:}
+\[
+    I(t) = \frac{U_{L,max}}{L} \sin{(\omega t)} + C
+\]
+Spannung und Strom sind um 90° phasenverschoben \\[1ex]
+
+\textbf{Definition des induktiven Widerstands:}
+\begin{formulabox}
+    \[
+    X_L = \omega L
+    \]
+\end{formulabox}
+\[
+    I_{max} = \frac{U_{L,max}}{X_L} \hspace{3mm} , \hspace{3mm} I_{eff} = \frac{U_{eff}}{X_L}
+\]
+
+\textbf{Leistungsaufnahme der Spule}
+\begin{formulabox}
+    \[
+        P(t) = U_L(t) \cdot I(t) = U_{L,max} \cdot I_{L,max} \cos{(\omega t)}\sin{(\omega t)}
+    \]
+\end{formulabox}
+Im zeitlichen Mittel ist die Leistungsaufnahme \textbf{Null !}
+
+\subsection{Kondensator in Wechselstromkreisen}
+\textbf{Spannungsabfall am Kondensator:}
+\[
+    U_C = \frac{q}{C}
+\]
+\hspace{5mm} Es gilt:
+\[
+    U_C(t) = U_{C,max} \cos{(\omega t)} \ \iff \ q(t) = CU_C(t) = CU_{C,max} \cos{( \omega t)}
+\]
+\hspace{5mm} \textbf{Stromstärke:}
+\[
+    I(t) = \frac{dq}{dt} = - \omega q_{max} \sin{(\omega t)} = -I_{max} \sin{(\omega t)}
+\]
+Spannung und Strom sind um 90° phasenverschoben \\[1ex]
+Analog zur Spule:
+\[
+    I_{max} = \omega q_{max} \Rightarrow \frac{U_{C,max}}{1/\omega c} \Rightarrow \frac{U_{C,max}}{X_C} \ , \ I_{eff} = \frac{U_{C,eff}}{X_C}
+\]
+\textbf{Definition des kapazitiven Widerstands:}
+\begin{formulabox}
+    \[
+        X_C = \frac{1}{\omega c}
+    \]
+\end{formulabox}
+
+\subsection{Der Transformator}
+Ein Transformator wandelt eine gegebene Eingangswechselspannung in eine gewünschte Ausgangsspannung. \\[1ex]
+Durch Vernachlässigung von Leistungsverlusten $\rightarrow$ (Eingang $=-$ Ausgang) \\[2ex]
+
+\textbf{Spannungsabfall an Primärspule:}
+\[
+    U_1 = - n_1 \frac{d\Phi_{mag}}{dt}
+\]
+\textbf{Magnetischer Fluss durch Sekundärspule ist $n_2 \Phi_{mag}$ somit gilt:}
+\[
+     U_2 = - n_2 \frac{d\Phi_{mag}}{dt}
+\]
+\begin{formulabox}
+    \[
+        \frac{U_1}{n_1} = \frac{U_2}{n_2} \hspace{3mm} \text{oder} \hspace{3mm} U_2 = \frac{n_2}{n_1}U_1
+    \]
+\end{formulabox}
+\[
+    P = U_{1,eff} \cdot I_{1,eff} = U_{2,eff} \cdot I_{2,eff}
+\]
+
+\subsection{LC und RC Stromkreise ohne Wechselspannung}
+\textbf{1. LC-Stromkreis} \\[1ex]
+\hspace{3mm} Zu Beginn ist der Schalter offen und Ladung $q_0$ auf der Kondensatorplatte. \\
+\hspace{3mm} Bei $t = 0$ wird der Schalter geschlossen $\rightarrow I = \frac{dq}{dt}$ \\[1ex]
+\hspace{3mm} \textbf{Maschenregel:} 
+\[
+    L\frac{dI}{dt} + \frac{q}{C} = 0 \ \Rightarrow \ L\frac{dq^2}{dt^2} + \frac{q}{C} = 0 \hspace{2mm} \iff \hspace{2mm} \frac{dq^2}{dt^2} + \frac{1}{LC}q = 0
+\]
+\hspace{3mm} \textbf{Für Strom gilt:}
+\begin{formulabox}
+    \[
+        I(t) = \frac{dq}{dt} = - \omega A \sin{(\omega t - \delta)}
+    \]
+\end{formulabox}
+\hspace{3mm} Der Strom ist der Ladung um 90° voraus \\[1ex]
+\hspace{3mm} \textbf{elektrische Energie im Kondensator:}
+\[
+    E_{el} = \frac{1}{2}qU_C = \frac{1}{2}\frac{q^2}{C} \Rightarrow E_{el}(t) = \frac{1}{2}\frac{q^2_{max}}{C} \cos^2{(\omega t)}
+\]
+\hspace{3mm} \textbf{magnetische Energie in Spule:}
+\[
+    E_{mag} = \frac{1}{2}LI^2 \Rightarrow E_{mag}(t) = \frac{1}{2}L \omega^2 q^2_{max} \sin^2{(\omega t)} = \frac{1}{2}\frac{q^2_{max}}{C} \sin^2{(\omega t)}
+\]
+\hspace{3mm} \textbf{Gesamtenergie:}
+\begin{formulabox}
+    \[
+        E_{ges} = E_{mag} + E_{el} = \frac{1}{2}\frac{q^2_{max}}{C}
+    \]
+\end{formulabox}
+\vspace{2mm}
+
+\textbf{2. RLC-Stromkreise} \\[1ex]
+\hspace{3mm} \textbf{Maschenregel:}
+\[
+    L\frac{dI}{dt} + RI + \frac{q}{C} = 0 \hspace{2mm} \iff \hspace{2mm} L\frac{dq^2}{dt^2} + R\frac{dq}{dt} + \frac{1}{C}q = 0
+\]
+
+\end{flushleft}

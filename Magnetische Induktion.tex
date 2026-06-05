@@ -1,0 +1,132 @@
+\section{Magnetische Induktion}
+\begin{flushleft}
+
+\subsection{Der Magnetische Fluss}
+Analog zum elektrischen Fluss $( \Phi_{el} = \int_A \Vec{E} \cdot d\Vec{A} )$
+\\[1ex]
+\textbf{Magnetischer Fluss:}
+\[
+    \Phi_{mag} = \int_A \Vec{B} \cdot d\Vec{A} \hspace{10mm} [\Phi_{mag}] = \text{Weber} = \text{Wb} = T\cdot m^2
+\]
+
+\subsection{Induktionsspannung und Faraday'sches Gesetz}
+
+\textbf{Faraday'sches Gesetz:}
+\begin{formulabox}
+    \[
+        U_{ind} = -\frac{d\Phi}{dt}
+    \]
+\end{formulabox}
+\textbf{Faraday'sches Gesetz für geschlossene, ruhende Leiterschleife:}
+\begin{formulabox}
+    \[
+        U_{ind} = \oint_C \Vec{E} \cdot d\Vec{l} = - \frac{d\Phi}{dt} = -\frac{d}{dt}\int_A \Vec{B} \cdot d\Vec{A}
+    \]
+\end{formulabox}
+
+\textbf{Kreisruhende Schleife in homogenen $\Vec{B}-Feld$:}
+\[
+    U_{ind} = 2\pi r \cdot E_t \hspace{5mm} U_{ind} -\pi r^2 \frac{dB}{dt} \hspace{2mm} \Rightarrow \hspace{2mm} E_{t}(r) = -\frac{r}{2}\frac{dB}{dt}
+\]
+
+\subsection{Induktion durch Bewegung}
+Durch Bewegung eines Leiters in $\Vec{B}$ wird eine Spannung induziert \\
+\[
+    \Phi_{mag} = \int_{A(t)} \Vec{B} \cdot d\vec{A} = B \cdot A(t) = B \cdot l \cdot x(t)
+\]\[
+    U_{ind} = -\frac{\Phi_{mag}}{dt} = -Bl\frac{dx(t)}{dt} = - Blv(t)
+\]
+\textbf{Der induzierte Strom ist somit:}
+\[
+    I_{ind}(t) = \frac{U_{ind}(t)}{R} = - \frac{Blv(t)}{R}
+\]
+
+\subsection{Wirbelströme}
+Magnetische Flussänderungen erzeugen in Leitern kreisförmige Wirbelströme. Diese verursachen (abhängig von Geometrie und Leitfähigkeit) Energieverluste durch Joule'sche Wärme.
+
+\subsection{Induktivität}
+$\Phi_{mag}$ in einer Spule ist proportional zum Strom.
+\begin{formulabox}
+    \[
+        \Phi_{mag} = L \cdot I \hspace{10mm} [L] = \text{Henry} = H
+    \]
+\end{formulabox}
+\textbf{Induzierte Spannung über eine Spule:}
+\[
+    U_{ind} = - \frac{d\Phi_{mag}}{dt} = -L\frac{dI}{dt}
+\]
+\textbf{Spannungsabfall falls Innenwiderstand $R_i$ vorliegt:}
+\[
+    U = U_{ind} - R_i I = - L \frac{dI}{dt} - R_i I
+\]
+
+\textbf{Selbstinduktivität einer Zylinderspule}:
+\begin{formulabox}
+    \[
+       \Phi_{mag} = nBA = \mu_0 \frac{n^2}{l}AI \ != \ L \cdot I \ \Rightarrow \ L = \mu_0 \frac{n^2}{l}A
+    \]
+\end{formulabox}
+
+\textbf{Gesamtfluss durch eine zweite Spule:}
+\begin{formulabox}
+    \[
+        \Phi_{mag2} = L_{12}I_1 + L_2I_2 \hspace{5mm} \Rightarrow \hspace{5mm} L_{12} = L_{21}
+    \] 
+\end{formulabox}
+\textbf{Magnetischer Fluss von zweiter Spule (aussen) durch erste Spule:}
+\begin{formulabox}
+    \[
+        \Phi_{mag21} = n_1B_2A_1 = \mu_0 \frac{n_1n_2}{l}\pi r_1^2 I_2 \ != \ L_{21}I_2
+    \]
+\end{formulabox}
+\textbf{Magnetischer Fluss von erster Spule (innen) durch zweite Spule:}
+\begin{formulabox}
+    \[
+        \Phi_{mag12} = n_2B_1A_1 = \mu_0 \frac{n_1n_2}{l}\pi r_1^2 I_1 \ != \ L_{12}I_1
+    \]
+\end{formulabox}
+
+\subsection{Die Energie im Magnetfeld}
+Eine Spule oder Induktivität speichert magnetische Energie\\[1ex]
+\textbf{In einer Spule gespeicherte Energie:}
+\begin{formulabox}
+    \[
+        E_{mag} = \frac{1}{2} L I^2
+    \]
+\end{formulabox}
+\textbf{Zylinderspule:}
+\begin{formulabox}
+    \[
+        E_{mag} = \frac{1}{2}LI^2 = \frac{1}{2}\mu_0\left( \frac{n}{l} \right)^2 A \cdot l \cdot \left( \frac{B}{\mu_0\left( \frac{n}{l} \right)} \right)^2 = \frac{B^2}{2\mu_0}A\cdot l
+    \]
+\end{formulabox}
+
+\textbf{Energiedichte:}
+\[
+    w_{mag} = \frac{B^2}{2\mu_0} \ \Rightarrow \text{Energie des Magnetfeldes}
+\]
+
+\subsection{RL-Stromkreise}
+\textbf{Verhalten von $I(t)$ nachdem der Schalter geschlossen wird} \\
+\hspace{5mm} Maschenregel:
+\[
+    U_0 = IR + L\frac{dI}{dt}
+\]
+\begin{formulabox}
+    \[
+        \frac{dI}{dt} = \frac{U_0}{L} - \frac{I(t)R}{L} \ \Rightarrow \ I(t) = \frac{U_0}{R}\left( 1 - e^{(R/L)t} \right)
+    \]
+\end{formulabox}
+
+\textbf{Verhalten von $I(t)$ wenn die Spannungsquelle abgeklemmt wird:} \\
+\hspace{5mm} Maschenregel für Stromkreis ohne Spannungsquelle:
+\[
+    -I(t)R - L\frac{dI}{dt} = 0 \iff \frac{dI(t)}{dt} = -\frac{R}{L}I(t)
+\]
+\begin{formulabox}
+    \[
+        I(t) = I_0 e^{-t/\tau} \hspace{5mm} \tau = \frac{L}{R}
+    \]
+\end{formulabox}
+
+\end{flushleft}

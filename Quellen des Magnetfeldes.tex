@@ -1,0 +1,180 @@
+\section{Quellen des Magnetfeldes}
+\begin{flushleft}
+
+\subsection{Das Magnetfeld der bewegten Punktladung}
+Punktladung P mit $|\Vec{v}| \ll c$ erzeugt ein $\Vec{B}-Feld$ \\[1ex]
+\textbf{Magnetfeld einer bewegten Punktladung: (Biot-Savart'sches Gesetz)}
+\begin{formulabox}
+    \[
+        \Vec{B} = \frac{\mu_0}{4 \pi} \cdot q \cdot \frac{\Vec{v} \times \hat{e_r}}{r^2}
+    \]
+\end{formulabox}
+
+\subsection{Das Magnetfeld von Strömen}
+\textbf{$\Vec{B}-Feld$ eines Stromfeldes: (Biot-Savart'sches Gesetz)}
+\begin{formulabox}
+    \[
+        d\Vec{B} = \frac{\mu_0}{4 \pi} \cdot I \cdot \frac{d\Vec{l} \times \hat{e_r}}{r^2}
+    \]
+\end{formulabox}
+
+\subsection{Magnetfeld einer Leiterschleife}
+\textbf{Im Mittelpunkt der Leiterschleife:}
+\[
+    dB = \frac{\mu_0}{4 \pi} \cdot I \cdot \frac{dl}{r^2} \Rightarrow dB = \frac{\mu_0}{4 \pi}  \frac{I}{r^2} \oint |d\Vec{l}|
+\]
+\begin{formulabox}
+    \[
+        B = \frac{\mu_0}{4 \pi}  \frac{I}{r^2} \cdot 2\pi r = \frac{\mu_0 I}{2 r}
+    \]
+\end{formulabox}
+
+\textbf{Für einen Punkt auf der z-Achse:}
+\[
+    dB = \frac{\mu_0}{4 \pi} \frac{I |d\Vec{l} \times \hat{e_r}|}{r^2} = \frac{\mu_0}{4\pi} \frac{I dl}{\sqrt{\left( z^2 + r^2 \right)}}
+\]
+Beiträge senkrecht zur z-Achse hebe sich auf:
+\[
+    dB_z = dB \sin{\theta} = dB \frac{r}{\sqrt{\left( z^2 + r^2 \right)}}
+\]
+\begin{formulabox}
+    \[
+        B_z = \frac{\mu_0}{4\pi} \frac{2 \pi r^2 I}{\left( z^2 + r^2 \right)^{3/2}}
+    \]
+\end{formulabox}
+
+\textbf{Spezielfall $z \gg r \Rightarrow (z^2 + r^2)^{3/2} = |z|^3$}
+\begin{formulabox}
+    \[
+        \Rightarrow \hspace{3mm} B_z = \frac{\mu_0}{4\pi} \frac{2 \pi r^2 I}{|z|^3} = \frac{\mu_0}{4\pi} \frac{2 \mu}{|z|^3}
+    \]
+\end{formulabox}
+
+\textbf{Magnetfeld auf der Achse einer Spule:}
+\begin{formulabox}
+    \[
+        B_z = \frac{\mu_0}{2}\frac{n}{l} I \left( \frac{z - z_1}{\sqrt{\left( z^2 - Z_1^2 \right) + r^2}} - \frac{z - z_2}{\sqrt{\left( z^2 - Z_2^2 \right) + r^2}}\right)
+    \]
+\end{formulabox} 
+
+\textbf{Magnetfeld im Inneren einer langen Spule:}
+\begin{formulabox}
+    \[
+        B_z = \frac{\mu_0 n I}{l}
+    \]
+\end{formulabox}
+
+\subsection{Das Magnetfeld eines geraden stromdurchflossenen Leiters}
+Aus $\Vec{B} \propto I d\Vec{l} \times \hat{e_r}$ folgt:
+\[
+    dB_z = \frac{\mu_0}{4 \pi} \frac{I dx}{r^2} \sin{\phi}
+\]\[
+    \hspace{6mm} = \frac{\mu_0}{4 \pi} \frac{I dx}{r^2} \cos{\theta}
+\]
+Es gilt:
+\[
+x = r_{\perp} \tan{\theta} \hspace{3mm} \rightarrow \hspace{3mm} dx = r_{\perp} \frac{1}{\cos^2{\theta}} d\theta  = \frac{r^2}{r_{\perp}} d\theta
+\]
+
+\[
+    dB_z = \frac{\mu_0}{4 \pi} \frac{I}{r^2} \frac{r^2 d\theta}{r_{\perp}} \cos{\theta} = \frac{\mu_0}{4 \pi} \frac{I}{r_{\perp}} \cos{\theta} d\theta
+\]
+\\[1ex]
+\textbf{Magnetfeld eines geraden Leiterabschnitts:}
+\begin{formulabox}
+    \[
+        B_z = \frac{\mu_0}{4 \pi} \frac{I}{r_{\perp}} \int_{\theta_1}^{\theta_2} \cos{\theta} d\theta \hspace{3mm} = \hspace{3mm} \frac{\mu_0}{4 \pi} \frac{I}{r_{\perp}} \left( \sin{\theta_2} - \sin{\theta_1} \right)
+    \]
+    \[
+        \hspace{36mm} = \hspace{3mm} \frac{\mu_0}{4 \pi} \frac{I}{r_{\perp}} \left( \cos{\phi_1} - \cos{\phi_2} \right)
+    \]
+\end{formulabox}
+
+\textbf{Für unendlich langen Leiter $\phi_1 \rightarrow 0 \hspace{2mm}$und$\hspace{2mm} \phi_2 \rightarrow 180$ :}
+\begin{formulabox}
+    \[
+        B_z = \frac{\mu_0}{4 \pi} \cdot \frac{2 I}{r_{\perp}}
+    \]
+\end{formulabox}
+
+\subsection{Kraft für zwischen zwei parallelen stromdurchflossenen Leiter:}
+Kraft auf Leiter:
+\[
+    d\Vec{F} = Id\vec{l} \times \vec{B}
+\]
+$\vec{B}$ wird durch parallelen Leiter erzeugt:
+\[
+    dF_{12} = I_2 |d\vec{l_2} \times \vec{B_1}|
+\]
+$\vec{l_2}$ immer senkrecht zu $\vec{B_1}$:
+\[
+    dF_{12} = I_2 dl_2 B_1
+\]
+\\[1ex]
+Abstand gegenüber der Länger der Leiter ist klein:
+\[
+    \Rightarrow dF_{12} = - I_2 dl_2 \frac{\mu_0 I_1}{2 \pi |r_{\perp}|}
+\]
+\hspace{5mm} Haben $I_1  \ \& \ I_2$ dieselbe Richtung ist $dF_{12}$ negativ $\rightarrow$ anziehend \\
+\hspace{5mm} Für unterschiedliche Ausrichtung ist $dF_{12}$ positiv $\rightarrow$ abstossend
+
+\subsection{Der Gauss'sche Satz für Magnetfelder}
+Feldlinien von $\vec{B}-Felder$ bilder \textbf{geschlossene Schleifen} \\[1ex]
+\textbf{Gauss'scher Satz für Magnetfelder:}
+\begin{formulabox}
+    \[
+        \Phi_{mag} = \oint_A \vec{B} \cdot d\vec{A} = 0  
+    \]
+\end{formulabox}
+
+\subsection{Das Ampère'sche Gesetz}
+Verknüpft $\vec{B}-Felder$ mit ihren Quellen (Ströme)
+\begin{formulabox}
+    \[
+        \oint_C B_t dl = \oint_C \vec{B} \cdot d\vec{l} = \mu_0 \cdot I_c
+    \]
+\end{formulabox}
+
+\textbf{Unendlich langer stromdurchflossener Leiter}
+\begin{formulabox}
+    \[
+        \oint_C \vec{B} \cdot d\vec{l} \ = \ B \oint_C d\vec{l} \ = \ B \cdot 2\pi r_{\perp} \ != \ \mu_0 I_C \Rightarrow B = \frac{\mu_0 I_C}{2\pi r_{\perp}}
+    \]
+\end{formulabox}
+
+\subsection{Magnetismus in der Materie}
+Drei verschiedene Verhaltensweisen: \\[1ex]
+- \textbf{Paramagnetisch:} Momente richten sich schwach in Richtung von $\vec{B}_{ext}$ aus\\
+\hspace{5mm} $\rightarrow$ Verstärkung des Magnetfeldes \\
+- \textbf{Diamagnetisch:} Momente richten sich schwach entgegen von $\vec{B}_{ext}$ aus \\
+\hspace{5mm} $\rightarrow$ Abschwächung des Magnetfeldes \\
+- \textbf{Ferromagnetisch:} Momente richten sich stark entlang $\vec{B}_{ext}$ aus \\
+\hspace{5mm} $\rightarrow$ grosse Verstärkung von $\vec{B}$ \\[1ex]
+\textbf{Ferromagneten} können permanent magnetisiert sein. \\[2ex]
+
+\subsection{Magnetisierung und magnetische Suszeptibilität}
+Durch die Ausrichtung der magnetischen Momente (mikro) entsteht die Magnetisierung $\vec{M}$ (makro)\\[1ex]
+\textbf{magnetisches Moment pro Volumen:} materialabhängig
+\begin{formulabox}
+    \[
+        \vec{M} = \frac{d\vec{M}}{dV}
+    \]
+\end{formulabox}
+\textbf{Im Stoff beträgt das Magnetfeld:}
+\begin{formulabox}
+    \[
+        \vec{B} = \vec{B_0} + \mu_0\vec{M}
+    \]
+\end{formulabox}
+Bei para- und diamagnetischen Stoffen ist $\vec{M}$ proportional zu $\vec{B_0}$
+\[
+    \vec{M} = \chi_{mag}\frac{\vec{B_0}}{\mu_0} \ \Rightarrow \ \vec{B} = \underbrace{\left( 1 + \chi_{mag} \right)}_{\mu_{rel}}\vec{B_0}
+\]
+\textbf{Materialkonstanten:} \\
+\hspace{5mm} $\chi_{mag}$: magnetische Suszeptibilität\\
+\hspace{5mm} $\mu_{rel}$: relative Permeabilität
+\[
+\chi_{mag,dia} < 0 < \chi_{mag,para} \hspace{5mm} \chi_{mag,ferro} \gg 1
+\]
+
+\end{flushleft}
