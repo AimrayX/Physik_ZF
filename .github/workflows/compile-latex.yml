@@ -1,0 +1,27 @@
+name: Compile LaTeX to PDF
+
+# Trigger this workflow every time someone pushes to the main branch
+on:
+  push:
+    branches: [ "main" ] # Change to "master" if your repository uses master
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository code so the runner can see it
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      # Step 2: Compile the LaTeX document
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+
+      # Step 3: Upload the resulting PDF so you can download it
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-pdf
+          path: main.pdf
