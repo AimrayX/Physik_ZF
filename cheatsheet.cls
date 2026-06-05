@@ -72,7 +72,7 @@
 \AtBeginDocument{%
 	% \begin{multicols*}{\@@colnum}% <--- COMMENTED OUT
 		% \begin{adjustwidth}{\@@leftTextMargin}{\@@rightTextMargin}% <--- COMMENTED OUT
-			\Header{\href{https://github.com/LaTeX-Template-Share}{\@doctitle}}{\@docauthor}
+			% \Header{\href{https://github.com/LaTeX-Template-Share}{\@doctitle}}{\@docauthor}
 			\small%
 		}
 		\AtEndDocument{%
@@ -219,7 +219,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \setlength{\parindent}{0cm}
-\setlength\columnsep{0.5mm}
+\setlength\columnsep{3mm}
 \setlength{\columnseprule}{0pt}
 \setlength{\textwidth}{597pt} % max 597pt
 \setlength{\textheight}{845pt} % max 845pt
