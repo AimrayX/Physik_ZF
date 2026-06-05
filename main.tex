@@ -8,7 +8,6 @@
 \usepackage{supertabular}
 \usepackage{pdfpages}
 \usepackage{pdflscape}
-\usepackage{epstopdf}
 
 \title{Physik ZF MAVT 2026}
 \author{Wyss Stephan Physik ZF MAVT 2026}
@@ -17,26 +16,30 @@
 \raggedcolumns
 
 \begin{document}
-
-\input{Das elektrische Feld I}
-\input{Das elektrische Feld II}
-\input{Die Kapazität}
-\input{Elektrischer Strom - Gleichstromkreise}
-\input{Das Magnetfeld}
-\input{Quellen des Magnetfeldes}
-\input{Magnetische Induktion}
-\input{Wechselstromkreise}
-\input{Die Maxwell-Gleichungen}
-\input{Eigenschaften des Lichts}
-\input{Geometrische Optik}
-\input{Interferenz und Beugung}
-\newpage
-
-\input{Anmerkung vom Verfasser}
-\input{Änderungsprotokoll}
-
+	
+	% Manually start the layout structure here!
+	\begin{multicols*}{3}
+		\begin{adjustwidth}{1mm}{1mm}
+			
+			\input{Das elektrische Feld I}
+			\input{Das elektrische Feld II}
+			\input{Die Kapazität}
+			\input{Elektrischer Strom - Gleichstromkreise}
+			\input{Das Magnetfeld}
+			\input{Quellen des Magnetfeldes}
+			\input{Magnetische Induktion}
+			\input{Wechselstromkreise}
+			\input{Die Maxwell-Gleichungen} % <-- Assuming you fixed the 't' typo!
+			\input{Eigenschaften des Lichts}
+			\input{Geometrische Optik}
+			\input{Interferenz und Beugung}
+			\newpage
+			
+			\input{Anmerkung vom Verfasser}
+			\input{Änderungsprotokoll}
+			
+			% End the layout structure before closing the document
+		\end{adjustwidth}
+	\end{multicols*}
+	
 \end{document}
-
-
-
-
