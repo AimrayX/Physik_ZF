@@ -68,15 +68,16 @@
 \def\@@rightTextMargin{1mm}
 
 %% begin and end document
+%% begin and end document
 \AtBeginDocument{%
-    \begin{multicols*}{\@@colnum}%
-    \begin{adjustwidth}{\@@leftTextMargin}{\@@rightTextMargin}%
-    \Header{\href{https://github.com/LaTeX-Template-Share}{\@doctitle}}{\@docauthor}
-    \small%
-}
-\AtEndDocument{%
-    \end{adjustwidth}%
-    \end{multicols*}%
+	% \begin{multicols*}{\@@colnum}% <--- COMMENTED OUT
+		% \begin{adjustwidth}{\@@leftTextMargin}{\@@rightTextMargin}% <--- COMMENTED OUT
+			\Header{\href{https://github.com/LaTeX-Template-Share}{\@doctitle}}{\@docauthor}
+			\small%
+		}
+		\AtEndDocument{%
+			% \end{adjustwidth}% <--- COMMENTED OUT
+		% \end{multicols*}% <--- COMMENTED OUT
 }
 
 %% SECTION
