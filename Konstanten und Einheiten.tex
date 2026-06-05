@@ -89,9 +89,6 @@ Hier sind Konstanten und ihren verschiedenen Einheiten, Einheiten von variablen 
 		Ebener Winkel & Radiant & $\mathrm{rad}$ \\ \hline
 		Raumwinkel & Steradiant & $\mathrm{sr}$ \\ \hline
 		Volumen & Liter & $\mathrm{l}$ oder $\mathrm{L} = 10^{-3}\,\mathrm{m^3}$ \\ \hline
-		Länge (Astronomie) & Lichtjahr & $\mathrm{Lj}$ \\ \hline
-		Länge (Astronomie) & Astr. Einheit & $\mathrm{AE}$ \\ \hline
-		Zeit (Alltag) & Min., Std., Tag, Jahr & $\mathrm{min}$, $\mathrm{h}$, $\mathrm{d}$, $\mathrm{a}$ \\ \hline
 		Temperatur (Alltag) & Grad Celsius & $^{\circ}\mathrm{C}$ \\ \hline
 	\end{tabularx}
 \end{center}
@@ -114,5 +111,38 @@ Hier sind Konstanten und ihren verschiedenen Einheiten, Einheiten von variablen 
 		Induktivität & Henry & $\mathrm{H}$ \\ \hline
 		Magnetisches Moment & Ampere-$\mathrm{m^2}$ & $\mathrm{A \cdot m^2}$ \\ \hline
 		Energie (Atomphysik) & Elektronenvolt & $\mathrm{eV}$ \\ \hline
+	\end{tabularx}
+\end{center}
+
+\subsection{Wichtige Umrechnungen}
+
+% --- TABELLE: UMRECHNUNGEN (Angepasst für schmale Spalten) ---
+% Wir nutzen \hsize in den X-Spalten, um die relative Breite zu steuern.
+% Die Summe der Faktoren vor \hsize muss der Anzahl der X-Spalten (hier 3) entsprechen.
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabularx}{\linewidth}{|
+			>{\raggedright\arraybackslash\hsize=0.8\hsize\hspace{0pt}}X|
+			>{\raggedright\arraybackslash\hsize=1.2\hsize\hspace{0pt}}X|
+			>{\raggedright\arraybackslash\hsize=1.0\hsize\hspace{0pt}}X|
+		}
+		\hline
+		\textbf{Umrechnung} & \textbf{Formel / Wert} & \textbf{Anmerkung} \\ \hline
+		
+		\multicolumn{3}{|c|}{\textbf{Energie, Arbeit \& Leistung}} \\ \hline
+		Elektronenvolt (eV) in J & $1\,\mathrm{eV} = 1{,}602 \cdot 10^{-19}\,\mathrm{J}$ & Oft in Atomphysik genutzt. \\ \hline
+		
+		\multicolumn{3}{|c|}{\textbf{Druck}} \\ \hline
+		Pascal (Pa) in SI & $1\,\mathrm{Pa} = 1\,\mathrm{N/m^2}$ & \\ \hline
+		Bar in Pa & $1\,\mathrm{bar} = 10^5\,\mathrm{Pa}$ & $1\,\mathrm{mbar} = 1\,\mathrm{hPa} = 100\,\mathrm{Pa}$ \\ \hline
+		Atmosphäre (atm) in Pa & $1\,\mathrm{atm} = 101\,325\,\mathrm{Pa}$ & Alter Normaldruck. \\ \hline
+		
+		\multicolumn{3}{|c|}{\textbf{Temperatur}} \\ \hline
+		Celsius ($^\circ\mathrm{C}$) in Kelvin (K) & $T(\mathrm{K}) = T_C(^\circ\mathrm{C}) + 273{,}15$ & $\Delta 1^\circ\mathrm{C} = \Delta 1\,\mathrm{K}$ \\ \hline
+		Fahrenheit ($^\circ\mathrm{F}$) in $^\circ\mathrm{C}$ & $T_C = \frac{5}{9} \cdot (T_F - 32)$ & \\ \hline
+		
+		\multicolumn{3}{|c|}{\textbf{Länge \& Volumen}} \\ \hline
+		Liter (l) in $\mathrm{m^3}$ & $1\,\mathrm{l} = 10^{-3}\,\mathrm{m^3}$ & \\ \hline
 	\end{tabularx}
 \end{center}
