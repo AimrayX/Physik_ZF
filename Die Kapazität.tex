@@ -1,5 +1,4 @@
 \section{Die Kapazität}
-\begin{flushleft}
 
 \subsection{Die Kapazität}
 Als Kapazität wird das Verhältnis der Ladung $q$, die sich auf einem Leiter befindet, zu seiner elektrischen Spannung $U$ gegenüber einem Bezugspunkt definiert:
@@ -8,7 +7,7 @@ Als Kapazität wird das Verhältnis der Ladung $q$, die sich auf einem Leiter be
 \]\[
     \text{Kapazität:} \ C = \frac{q}{U}
 \]
-\text{Einheit [C]: = Farad = F = $\frac{C}{V}$ = $\frac{Coulomb}{Volt}$}
+Einheit [C]: = Farad = F = $\frac{C}{V}$ = $\frac{Coulomb}{Volt}$
 
 \subsection{Kondensatoren}
 Ist eine Anordung von zwei Leiter, die beide eine gleich grosse, aber entgegengesetzte Ladung tragen können.\\[1ex]
@@ -43,7 +42,7 @@ $\sigma = \frac{q}{A}$: als Flächenladungdichte, $A$: Fläche der Platte \\[2ex
 Arbeit wird während dem Ladevorgang eines Kondensators verrichtet und kann als elektrische Energie gespeichert werden. \\[1ex]
 Der Gesamtzuwachs an Energie wird wiefolgt beschrieben: 
 \[
-    E_{el} = \int^q_0 dE_{el} = \int^q_0 \frac{q'}{C}dq' = \frac{1}{c}\int^q_0 q' dq' = \frac{1}{2}\frac{g^2}{C}
+    E_{el} = \int_0^q dE_{el} = \int_0^q \frac{q'}{C}dq' = \frac{1}{C}\int_0^q q' dq' = \frac{1}{2}\frac{q^2}{C}
 \]
 \textbf{Die im Kondensator gespeicherte Energie:}
 \begin{formulabox}
@@ -56,7 +55,7 @@ Definiert man $w_{el}$ als Energiedichte (Energie pro Volumen) so folgt: \\[1ex]
 \textbf{Energiedichte des elektrischen Felds:}
 \begin{formulabox}
     \[
-        w_{el} = \frac{Energie}{Volumen} = \frac{1}{2}\epsilon_0 E^2
+        w_{el} = \frac{\text{Energie}}{\text{Volumen}} = \frac{1}{2}\epsilon_0 E^2
     \]
 \end{formulabox}
 
@@ -80,7 +79,7 @@ Für \textbf{Parallelschaltung} gilt:
 
 Für \textbf{Reihen-/ Serienschaltung} gilt:
 \[
-    U = \phi_A - \phi_B = U_1 + U_2 = \frac{q}{C_1} + \frac{q}{C_2} \Rightarrow q\left( \frac{1}{C_1} + \frac{1}{C_2} \right)
+    U = \phi_A - \phi_B = U_1 + U_2 = \frac{q}{C_1} + \frac{q}{C_2} = q\left( \frac{1}{C_1} + \frac{1}{C_2} \right)
 \]
 \textbf{Ersatzkapazität für in Reihe geschaltete Kondensatoren}
 \begin{formulabox}
@@ -98,7 +97,7 @@ Dielektrikum schwächt $\Vec{E}-Feld \rightarrow$ gleiche Ladung, kleinere Spann
 $\varepsilon_{rel}$: hängt vom Dielektrikum ab, ist eine Matrielkonstante \\[2ex]
 \begin{formulabox}
     \[
-        \Rightarrow U = E \cdot d = \frac{\Vec{E}_0 \cdot d}{\varepsilon_{rel}} = \frac{U_0}{\varepsilon_{rel}}
+        \Rightarrow U = E \cdot d = \frac{E_0 \cdot d}{\varepsilon_{rel}} = \frac{U_0}{\varepsilon_{rel}}
     \]  
 \end{formulabox}
 \begin{formulabox}
@@ -116,5 +115,3 @@ $\varepsilon_{rel}$: hängt vom Dielektrikum ab, ist eine Matrielkonstante \\[2e
     w_{el} = \frac{1}{2}\varepsilon_{rel}\epsilon_0 E^2
     \]
 \end{formulabox}
-    
-\end{flushleft}
