@@ -1,10 +1,9 @@
 \section{Wechselstromkreise}
-\begin{flushleft}
 
 \subsection{Wechselspannung an einem Ohm'schen Widerstand}
 \textbf{Wechselstrom}generatoren erzeugen eine induzierte Spannung
 \[
-    U_{ind}(t) = \underbrace{U_{max}}_{\propto \ n\cdot |\Vec{B}||\Vec{A}|\cdot \omega} \cos{(\omega t)}
+    U_{ind}(t) = \underbrace{U_{max}}_{\propto \ n\cdot |\Vec{B}||\Vec{A}|\cdot \omega} \sin{(\omega t)}
 \]
 \hspace{5mm}aus Induktionsgesetz:
 \[
@@ -26,7 +25,7 @@
 \textbf{Die an R umgesetzte Leistung:}
 \begin{formulabox}
     \[
-        P(t) = R\cdot I(t)^2 = R^2_{max}\cos{(\omega t)}
+        P(t) = R\cdot I(t)^2 = R \cdot I_{max}^2 \cdot \cos{(\omega t)}^2
     \]
 \end{formulabox}
 
@@ -82,7 +81,7 @@ Spule und Kondensatoren zeigen in Wechselstromkreisen, aufgrund der sich ständi
 \]
 \hspace{5mm} Es gilt:
 \[
-    U_L(t) = U_{L,max} \cos{( \omega t)} \ != L \frac{dI}{dt} \ \iff \ \frac{dI}{dt} = \frac{U_{L,max} \cos{( \omega t)}}{L}
+    U_L(t) = U_{L,max} \cos{( \omega t)} \ \stackrel{!}{=} L \frac{dI}{dt} \ \iff \ \frac{dI}{dt} = \frac{U_{L,max} \cos{( \omega t)}}{L}
 \]
 \hspace{5mm} \textbf{Stromstärke:}
 \[
@@ -129,7 +128,7 @@ Analog zur Spule:
 \textbf{Definition des kapazitiven Widerstands:}
 \begin{formulabox}
     \[
-        X_C = \frac{1}{\omega c}
+        X_C = \frac{1}{\omega C}
     \]
 \end{formulabox}
 
@@ -160,7 +159,7 @@ Durch Vernachlässigung von Leistungsverlusten $\rightarrow$ (Eingang $=-$ Ausga
 \hspace{3mm} Bei $t = 0$ wird der Schalter geschlossen $\rightarrow I = \frac{dq}{dt}$ \\[1ex]
 \hspace{3mm} \textbf{Maschenregel:} 
 \[
-    L\frac{dI}{dt} + \frac{q}{C} = 0 \ \Rightarrow \ L\frac{dq^2}{dt^2} + \frac{q}{C} = 0 \hspace{2mm} \iff \hspace{2mm} \frac{dq^2}{dt^2} + \frac{1}{LC}q = 0
+    L\frac{dI}{dt} + \frac{q}{C} = 0 \ \Rightarrow \ L\frac{d^2q}{dt^2} + \frac{q}{C} = 0 \hspace{2mm} \iff \hspace{2mm} \frac{d^2q}{dt^2} + \frac{1}{LC}q = 0
 \]
 \hspace{3mm} \textbf{Für Strom gilt:}
 \begin{formulabox}
@@ -188,7 +187,5 @@ Durch Vernachlässigung von Leistungsverlusten $\rightarrow$ (Eingang $=-$ Ausga
 \textbf{2. RLC-Stromkreise} \\[1ex]
 \hspace{3mm} \textbf{Maschenregel:}
 \[
-    L\frac{dI}{dt} + RI + \frac{q}{C} = 0 \hspace{2mm} \iff \hspace{2mm} L\frac{dq^2}{dt^2} + R\frac{dq}{dt} + \frac{1}{C}q = 0
+    L\frac{dI}{dt} + RI + \frac{q}{C} = 0 \hspace{2mm} \iff \hspace{2mm} L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{1}{C}q = 0
 \]
-
-\end{flushleft}

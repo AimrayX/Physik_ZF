@@ -1,7 +1,6 @@
 \section{Elektrischer Strom - Gleichstromkreise}
-\begin{flushleft}
 
-Der Fluss von elektrischen Ladungen wird als \textbf{elektrischen Strom} bezeichnet. \\[1ex]
+Der Fluss von elektrischen Ladungen wird als \textbf{elektrischer Strom} bezeichnet.
 
 \subsection{elektrischer Strom und die Bewegung von Ladung}
 \textbf{Definition Strom:}\\
@@ -52,7 +51,7 @@ Die Rate, mit der elektrische Ladung durch einen Leiterquerschnitt fliesst.
         \Vec{j} = \sigma \Vec{E}
     \]
 \end{formulabox}
-$\sigma$ als elektr. Leitfähigkleit $\sigma = \frac{1}{r} = \frac{1}{\rho}$ \hspace{3mm} $\left[ \frac{s}{m}\right] = \left[ \frac{1}{\Omega m}\right]$
+$\sigma$ als elektr. Leitfähigkleit $\sigma = \frac{1}{r} = \frac{1}{\rho}$ \hspace{3mm} $\left[ \frac{S}{m}\right] = \left[ \frac{1}{\Omega m}\right]$
 \[
     I = \sigma EA = \frac{1}{r} \frac{E \cdot l \cdot A}{l} = \frac{1}{r} U \frac{A}{l} = \frac{U}{R}
 \] \\[1ex]
@@ -92,7 +91,7 @@ Spannungsquellen führen einem Stromkreis elektrische Energie hinzu. \\
 \] 
 \\[1ex]
 
-\textbf{Ideale Spannungsquellen} weisen an den Polen, unabhängig vom Stromfluss, immer die selbe Quellspannung $U_Q$ auf:
+\textbf{Ideale Spannungsquellen} weisen an den Polen, unabhängig vom Stromfluss, immer dieselbe Quellspannung $U_Q$ auf:
 \[
     I = \frac{U_Q}{R}
 \]
@@ -119,12 +118,12 @@ Spannungsquellen führen einem Stromkreis elektrische Energie hinzu. \\
     \]
 \end{formulabox}
 
-\subsection{Zusammenschalten von Widerstände}
+\subsection{Zusammenschalten von Widerständen}
 Für \textbf{Parallelschaltung} gilt:
 \[
     I = \frac{U_R}{R} = \frac{U_R}{R_1} + \frac{U_R}{R_2} + ... + \frac{U_R}{R_i} = U_R \left( \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_i} \right)
 \]
-\textbf{Ersatzkapazität für parallel geschaltete Widerstände}
+\textbf{Ersatzwiderstand für parallel geschaltete Widerstände}
 \begin{formulabox}
     \[
        \Rightarrow R_{eq} = \left( \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_i} \right)^{-1}
@@ -135,7 +134,7 @@ Für \textbf{Reihen-/ Serienschaltung} gilt:
 \[
     U_R = U_1 + U_2 = R_1 I + R_2 I = I(R_1 + R_2)
 \]
-\textbf{Ersatzkapazität für in Reihe geschaltete Widerstände}
+\textbf{Ersatzwiderstand für in Reihe geschaltete Widerstände}
 \begin{formulabox}
     \[
        \Rightarrow R_{eq} = ( R_1 + R_2 + ... + R_i)
@@ -143,7 +142,7 @@ Für \textbf{Reihen-/ Serienschaltung} gilt:
 \end{formulabox}
 
 \subsection{Die Kirchhoff'schen Regeln}
-Anwendbar bei \textbf{stationärem (Zeit unabhängigen)} Stromfluss. \\[1ex]
+Anwendbar bei \textbf{stationärem (zeitunabhängigen)} Stromfluss. \\[1ex]
 \hspace{5mm} \textbf{1. Knotenregel:} \\
 \hspace{10mm} Summe aller hineinfliessenden Ströme ist \textbf{gleich} der Summe aller \\ \hspace{10mm} herausfliessenden
 \\[2ex]
@@ -152,7 +151,7 @@ Anwendbar bei \textbf{stationärem (Zeit unabhängigen)} Stromfluss. \\[1ex]
 \\[2ex]
 
 \subsection{RC-Schaltkreise}
-Schaltungen mit Ohm'schen Widerstand R und Kondensator C. \\[2ex]
+Schaltungen mit Ohm'schem Widerstand R und Kondensator C. \\[2ex]
 
 \textbf{Entladen eines Kondensators:} \\
 Für $t = 0$ (Schalter geschlossen $\rightarrow$ entladen) gilt:
@@ -181,7 +180,7 @@ Für $t = 0$ (Schalter geschlossen $\rightarrow$ entladen) gilt:
 \end{formulabox}
 
 \textbf{Aufladen eines Kondensators:} \\
-Füt $t = 0$ (Schalter geschlossen $\rightarrow$ aufladen) gilt:
+Für $t = 0$ (Schalter geschlossen $\rightarrow$ aufladen) gilt:
 \\[1ex]
 \hspace{5mm} \textbf{Maschenregel:}
 \[
@@ -196,19 +195,17 @@ Füt $t = 0$ (Schalter geschlossen $\rightarrow$ aufladen) gilt:
     q(t) = CU\left( 1 - e^{-\frac{t}{\tau}} \right) = q_E\left( 1 - e^{-\frac{t}{\tau}} \right) \hspace{5mm} q_E = \text{max. Ladung}
     \]
 \end{formulabox}
-\hspace{5mm} \textbf{Für dem Strom gilt:}
+\hspace{5mm} \textbf{Für den Strom gilt:}
 \begin{formulabox}
     \[
-        I(t) = \frac{dq(t)}{dt} = CU \left( \frac{1}{RC} - e^{-\frac{t}{\tau}} \right) = \frac{U}{R}e^{-\frac{t}{\tau}} = I_Ae^{-\frac{t}{\tau}}
+        I(t) = \frac{dq(t)}{dt} = CU \left( \frac{1}{RC} \cdot e^{-\frac{t}{\tau}} \right) = \frac{U}{R}e^{-\frac{t}{\tau}} = I_Ae^{-\frac{t}{\tau}}
     \]
 \end{formulabox}
 \vspace{2ex}
 
 \subsection{Energiebilanz beim Aufladen eines Kondensators}
 Ladung $q_E = CU$ fliesst beim Aufladen durch die Batterie \\[1ex]
-Dabei Verrichtete Arbeit: $W = q_E \cdot U = CU^2$ \\[1ex]
+Dabei verrichtete Arbeit: $W = q_E \cdot U = CU^2$ \\[1ex]
 \hspace{5mm} $\rightarrow$ 50\% elektrische Energie: $E_{el} = \frac{1}{2} q_E \cdot U = \frac{1}{2} CU^2$ \\[1ex]
 \hspace{5mm} $\rightarrow$ 50\% thermische Energie
 \\[1ex]
-
-\end{flushleft}

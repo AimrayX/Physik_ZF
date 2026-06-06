@@ -1,8 +1,7 @@
 \section{Quellen des Magnetfeldes}
-\begin{flushleft}
 
 \subsection{Das Magnetfeld der bewegten Punktladung}
-Punktladung P mit $|\Vec{v}| \ll c$ erzeugt ein $\Vec{B}-Feld$ \\[1ex]
+Punktladung P mit $|\Vec{v}| \ll c$ erzeugt ein $\Vec{B}$-Feld \\[1ex]
 \textbf{Magnetfeld einer bewegten Punktladung: (Biot-Savart'sches Gesetz)}
 \begin{formulabox}
     \[
@@ -11,7 +10,7 @@ Punktladung P mit $|\Vec{v}| \ll c$ erzeugt ein $\Vec{B}-Feld$ \\[1ex]
 \end{formulabox}
 
 \subsection{Das Magnetfeld von Strömen}
-\textbf{$\Vec{B}-Feld$ eines Stromfeldes: (Biot-Savart'sches Gesetz)}
+\textbf{$\Vec{B}$-Feld eines Stromfeldes: (Biot-Savart'sches Gesetz)}
 \begin{formulabox}
     \[
         d\Vec{B} = \frac{\mu_0}{4 \pi} \cdot I \cdot \frac{d\Vec{l} \times \hat{e_r}}{r^2}
@@ -31,7 +30,7 @@ Punktladung P mit $|\Vec{v}| \ll c$ erzeugt ein $\Vec{B}-Feld$ \\[1ex]
 
 \textbf{Für einen Punkt auf der z-Achse:}
 \[
-    dB = \frac{\mu_0}{4 \pi} \frac{I |d\Vec{l} \times \hat{e_r}|}{r^2} = \frac{\mu_0}{4\pi} \frac{I dl}{\sqrt{\left( z^2 + r^2 \right)}}
+    dB = \frac{\mu_0}{4 \pi} \frac{I |d\Vec{l} \times \hat{e_r}|}{r^2} = \frac{\mu_0}{4\pi} \frac{I dl}{\left( z^2 + r^2 \right)}
 \]
 Beiträge senkrecht zur z-Achse hebe sich auf:
 \[
@@ -53,7 +52,7 @@ Beiträge senkrecht zur z-Achse hebe sich auf:
 \textbf{Magnetfeld auf der Achse einer Spule:}
 \begin{formulabox}
     \[
-        B_z = \frac{\mu_0}{2}\frac{n}{l} I \left( \frac{z - z_1}{\sqrt{\left( z^2 - Z_1^2 \right) + r^2}} - \frac{z - z_2}{\sqrt{\left( z^2 - Z_2^2 \right) + r^2}}\right)
+        B_z = \frac{\mu_0}{2}\frac{n}{l} I \left( \frac{z - z_1}{\sqrt{\left( z - z_1 \right)^2 + r^2_{LS}}} - \frac{z - z_2}{\sqrt{\left( z - z_2 \right)^2 + r^2_{LS}}}\right)
     \]
 \end{formulabox} 
 
@@ -90,14 +89,14 @@ x = r_{\perp} \tan{\theta} \hspace{3mm} \rightarrow \hspace{3mm} dx = r_{\perp} 
     \]
 \end{formulabox}
 
-\textbf{Für unendlich langen Leiter $\phi_1 \rightarrow 0 \hspace{2mm}$und$\hspace{2mm} \phi_2 \rightarrow 180$ :}
+\textbf{Für unendlich langen Leiter $\phi_1 \rightarrow 0 \hspace{2mm}$und$\hspace{2mm} \phi_2 \rightarrow 180^\circ$ :}
 \begin{formulabox}
     \[
         B_z = \frac{\mu_0}{4 \pi} \cdot \frac{2 I}{r_{\perp}}
     \]
 \end{formulabox}
 
-\subsection{Kraft für zwischen zwei parallelen stromdurchflossenen Leiter:}
+\subsection{Kraft zwischen zwei parallelen stromdurchflossenen Leiter:}
 Kraft auf Leiter:
 \[
     d\Vec{F} = Id\vec{l} \times \vec{B}
@@ -111,7 +110,7 @@ $\vec{l_2}$ immer senkrecht zu $\vec{B_1}$:
     dF_{12} = I_2 dl_2 B_1
 \]
 \\[1ex]
-Abstand gegenüber der Länger der Leiter ist klein:
+Abstand gegenüber der Länger des Leiter ist klein:
 \[
     \Rightarrow dF_{12} = - I_2 dl_2 \frac{\mu_0 I_1}{2 \pi |r_{\perp}|}
 \]
@@ -119,7 +118,7 @@ Abstand gegenüber der Länger der Leiter ist klein:
 \hspace{5mm} Für unterschiedliche Ausrichtung ist $dF_{12}$ positiv $\rightarrow$ abstossend
 
 \subsection{Der Gauss'sche Satz für Magnetfelder}
-Feldlinien von $\vec{B}-Felder$ bilder \textbf{geschlossene Schleifen} \\[1ex]
+Feldlinien von $\vec{B}-Felder$ bilden \textbf{geschlossene Schleifen} \\[1ex]
 \textbf{Gauss'scher Satz für Magnetfelder:}
 \begin{formulabox}
     \[
@@ -138,7 +137,7 @@ Verknüpft $\vec{B}-Felder$ mit ihren Quellen (Ströme)
 \textbf{Unendlich langer stromdurchflossener Leiter}
 \begin{formulabox}
     \[
-        \oint_C \vec{B} \cdot d\vec{l} \ = \ B \oint_C d\vec{l} \ = \ B \cdot 2\pi r_{\perp} \ != \ \mu_0 I_C \Rightarrow B = \frac{\mu_0 I_C}{2\pi r_{\perp}}
+        \oint_C \vec{B} \cdot d\vec{l} \ = \ B \oint_C d\vec{l} \ = \ B \cdot 2\pi r_{\perp} \ \stackrel{!}{=} \ \mu_0 I_C \Rightarrow B = \frac{\mu_0 I_C}{2\pi r_{\perp}}
     \]
 \end{formulabox}
 
@@ -176,5 +175,3 @@ Bei para- und diamagnetischen Stoffen ist $\vec{M}$ proportional zu $\vec{B_0}$
 \[
 \chi_{mag,dia} < 0 < \chi_{mag,para} \hspace{5mm} \chi_{mag,ferro} \gg 1
 \]
-
-\end{flushleft}

@@ -1,5 +1,4 @@
 \section{Magnetische Induktion}
-\begin{flushleft}
 
 \subsection{Der Magnetische Fluss}
 Analog zum elektrischen Fluss $( \Phi_{el} = \int_A \Vec{E} \cdot d\Vec{A} )$
@@ -24,9 +23,9 @@ Analog zum elektrischen Fluss $( \Phi_{el} = \int_A \Vec{E} \cdot d\Vec{A} )$
     \]
 \end{formulabox}
 
-\textbf{Kreisruhende Schleife in homogenen $\Vec{B}-Feld$:}
+\textbf{Kreisruhende Schleife in homogenen $\Vec{B}$-Feld:}
 \[
-    U_{ind} = 2\pi r \cdot E_t \hspace{5mm} U_{ind} -\pi r^2 \frac{dB}{dt} \hspace{2mm} \Rightarrow \hspace{2mm} E_{t}(r) = -\frac{r}{2}\frac{dB}{dt}
+    U_{ind} = 2\pi r \cdot E_t \hspace{5mm} U_{ind} = -\pi r^2 \frac{dB}{dt} \hspace{2mm} \Rightarrow \hspace{2mm} E_{t}(r) = -\frac{r}{2}\frac{dB}{dt}
 \]
 
 \subsection{Induktion durch Bewegung}
@@ -34,7 +33,7 @@ Durch Bewegung eines Leiters in $\Vec{B}$ wird eine Spannung induziert \\
 \[
     \Phi_{mag} = \int_{A(t)} \Vec{B} \cdot d\vec{A} = B \cdot A(t) = B \cdot l \cdot x(t)
 \]\[
-    U_{ind} = -\frac{\Phi_{mag}}{dt} = -Bl\frac{dx(t)}{dt} = - Blv(t)
+    U_{ind} = -\frac{d\Phi_{mag}}{dt} = -Bl\frac{dx(t)}{dt} = - Blv(t)
 \]
 \textbf{Der induzierte Strom ist somit:}
 \[
@@ -63,7 +62,7 @@ $\Phi_{mag}$ in einer Spule ist proportional zum Strom.
 \textbf{Selbstinduktivität einer Zylinderspule}:
 \begin{formulabox}
     \[
-       \Phi_{mag} = nBA = \mu_0 \frac{n^2}{l}AI \ != \ L \cdot I \ \Rightarrow \ L = \mu_0 \frac{n^2}{l}A
+       \Phi_{mag} = nBA = \mu_0 \frac{n^2}{l}AI \ \stackrel{!}{=} \ L \cdot I \ \Rightarrow \ L = \mu_0 \frac{n^2}{l}A
     \]
 \end{formulabox}
 
@@ -76,13 +75,13 @@ $\Phi_{mag}$ in einer Spule ist proportional zum Strom.
 \textbf{Magnetischer Fluss von zweiter Spule (aussen) durch erste Spule:}
 \begin{formulabox}
     \[
-        \Phi_{mag21} = n_1B_2A_1 = \mu_0 \frac{n_1n_2}{l}\pi r_1^2 I_2 \ != \ L_{21}I_2
+        \Phi_{mag21} = n_1B_2A_1 = \mu_0 \frac{n_1n_2}{l}\pi r_1^2 I_2 \ \stackrel{!}{=} \ L_{21}I_2
     \]
 \end{formulabox}
 \textbf{Magnetischer Fluss von erster Spule (innen) durch zweite Spule:}
 \begin{formulabox}
     \[
-        \Phi_{mag12} = n_2B_1A_1 = \mu_0 \frac{n_1n_2}{l}\pi r_1^2 I_1 \ != \ L_{12}I_1
+        \Phi_{mag12} = n_2B_1A_1 = \mu_0 \frac{n_1n_2}{l}\pi r_1^2 I_1 \ \stackrel{!}{=} \ L_{12}I_1
     \]
 \end{formulabox}
 
@@ -114,7 +113,7 @@ Eine Spule oder Induktivität speichert magnetische Energie\\[1ex]
 \]
 \begin{formulabox}
     \[
-        \frac{dI}{dt} = \frac{U_0}{L} - \frac{I(t)R}{L} \ \Rightarrow \ I(t) = \frac{U_0}{R}\left( 1 - e^{(R/L)t} \right)
+        \frac{dI}{dt} = \frac{U_0}{L} - \frac{I(t)R}{L} \ \Rightarrow \ I(t) = \frac{U_0}{R}\left( 1 - e^{-(R/L)t} \right)
     \]
 \end{formulabox}
 
@@ -128,5 +127,3 @@ Eine Spule oder Induktivität speichert magnetische Energie\\[1ex]
         I(t) = I_0 e^{-t/\tau} \hspace{5mm} \tau = \frac{L}{R}
     \]
 \end{formulabox}
-
-\end{flushleft}
