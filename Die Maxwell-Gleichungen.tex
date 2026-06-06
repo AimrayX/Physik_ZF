@@ -1,5 +1,4 @@
 \section{Die Maxwell-Gleichungen}
-\begin{flushleft}
 
 \subsection{Der Maxwell'sche Verschiebungsstrom}
 \textbf{Lade-/ Entladevorgang:}
@@ -7,14 +6,14 @@
     I = \frac{dQ}{dt} = \underbrace{\epsilon_0 \frac{d\Phi_{el}}{dt}}_{I_V \text{: Verschiebungsstrom}}
 \]
 
-\textbf{Verallgemeinertes Ampèr'sches Gesetz}
+\textbf{Verallgemeinertes Ampère'sches Gesetz}
 \begin{formulabox}
     \[
         \oint_C \Vec{B} \cdot d\Vec{l} = \mu_0 \left( I + I_V \right) = \mu_0 I + \mu_0 \epsilon_0 \frac{d\Phi_{el}}{dt}
     \]
 \end{formulabox}
 
-Magnetfelder werden nicht nur von Strömen erzeugt, sondern auch von zetilich variierenden elektrischen Felder. \\[2ex]
+Magnetfelder werden nicht nur von Strömen erzeugt, sondern auch von zeitlich variierenden elektrischen Felder. \\[2ex]
 
 \textbf{Gegenstück zum Faraday'schen Gesetz}
 \[
@@ -38,7 +37,7 @@ Magnetfelder werden nicht nur von Strömen erzeugt, sondern auch von zetilich va
 
 \vspace{5mm}
 
-\textbf{keine magnetische Monopole}
+\textbf{keine magnetischen Monopole}
 \begin{formulabox}
     \[
         \vec{\nabla} \cdot \vec{B} = 0
@@ -52,7 +51,7 @@ Magnetfelder werden nicht nur von Strömen erzeugt, sondern auch von zetilich va
     \]
 \end{formulabox}
 
-\subsection{Die Wellengleichung für elektromagnetishe Wellen}
+\subsection{Die Wellengleichung für elektromagnetische Wellen}
 \textbf{Rückblick:} z.B Seilwellen
 \[
     \frac{\partial^2 y(x,t)}{\partial x^2} = \frac{1}{v^2}\frac{\partial^2 y(x,t)}{\partial t^2} \hspace{15mm} v^2 = \frac{F_s}{\rho}
@@ -80,7 +79,7 @@ $y(x,t) = y_0 \sin{(kx + \omega t)}$ \hspace{10mm} $\omega = 2\pi\nu$: Kreisfreq
 Eine em-Welle breitet sich immer in Richtung von $\vec{E} \times \vec{B}$ aus:
 
 \[
-    \vec{E} \times \vec{B} = [\epsilon_0 \sin{(kx - \omega t)} \hat{e}_y] \times [B_0 \sin{(kx - \omega t)} \hat{e}_z]
+    \vec{E} \times \vec{B} = [E_0 \sin{(kx - \omega t)} \hat{e}_y] \times [B_0 \sin{(kx - \omega t)} \hat{e}_z]
 \]
 \begin{formulabox}
     \[
@@ -88,12 +87,12 @@ Eine em-Welle breitet sich immer in Richtung von $\vec{E} \times \vec{B}$ aus:
     \]
 \end{formulabox}
 Es gilt: \\
-\hspace{3mm} $\rightarrow \vec{E} \perp \vec{B}, \vec{E} \perp \vec{V}$ und $\vec{B} \perp \vec{V}$ \\
-\hspace{3mm} $\rightarrow$ em-Wellen sind Transversalwellen \\
+\hspace{3mm} $\rightarrow \vec{E} \perp \vec{B}, \vec{E} \perp \vec{v}$ und $\vec{B} \perp \vec{v}$ \\
+\hspace{3mm} $\rightarrow$ EM-Wellen sind Transversalwellen \\
 \hspace{3mm} $\rightarrow$ Feldstärke: $E = cB$ zu jedem Zeitpunkt an jedem Ort
 
 \subsection{Elektromagnetische Strahlung}
-Die \textbf{Energiedichte} einer em-Welle $w_{em}$ setzt sich aus der elektrischen und magnetisches Energiedichte zusammen.\\[1ex]
+Die \textbf{Energiedichte} einer em-Welle $w_{em}$ setzt sich aus der elektrischen und magnetischen Energiedichte zusammen.\\[1ex]
 
 \hspace{10mm} $\vec{E}-Feld$: $w_{el} = \frac{1}{2}\epsilon_0 E^2$ \\
 \hspace{10mm} $\vec{B}-Feld$: $w_{mag} = \frac{1}{2\mu_0} B^2$ \\[1ex]
@@ -102,7 +101,7 @@ Für eine em-Welle gilt: $E = cB$
 \[
     w_{mag} = \frac{B^2}{2 \mu_0} = \frac{E^2}{2 \mu_0 c^2} = \frac{1}{2}\epsilon_0 E^2 = w_{el}
 \]
-\textbf{Energiedichte in einer em-Welle}
+\textbf{Energiedichte in einer EM-Welle}
 \begin{formulabox}
     \[
         w_{em} = w_{el} + w_{mag} = \epsilon_0 E^2 = \frac{B^2}{\mu_0} = \frac{EB}{\mu_0 c}
@@ -113,13 +112,9 @@ Für eine em-Welle gilt: $E = cB$
 \[
     E_{eff} = \frac{1}{\sqrt{2}}E_0 \hspace{5mm} \text{und} \hspace{5mm} B_{eff} = \frac{1}{\sqrt{2}}B_0
 \]
-\textbf{Intensität} (mittlere Leistung pro Fläche senkrecht zur Ausrichtungsrichtung)
+\textbf{Intensität} (mittlere Leistung pro Fläche senkrecht zur Ausbreitungsrichtung)
 \begin{formulabox}
     \[
-        I_{em} = \langle w_{em} \rangle \cdot c = \frac{E_{eff} \cdot B_{eff}}{\mu_0} = \frac{1}{2}\frac{E_0 B_0}{\mu_0} = \underbrace{\langle |\vec{s}| \rangle}_{\frac{\vec{E} \times \vec{B}}{\mu_0}}
+        I_{em} = \langle w_{em} \rangle \cdot c = \frac{E_{eff} \cdot B_{eff}}{\mu_0} = \frac{1}{2}\frac{E_0 B_0}{\mu_0} = \underbrace{\langle |\vec{S}| \rangle}_{\frac{\vec{E} \times \vec{B}}{\mu_0}}
     \]
 \end{formulabox}
-
-
-    
-\end{flushleft}
