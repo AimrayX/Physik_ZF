@@ -1,0 +1,89 @@
+\section*{Standard-Integrale und Volumenelemente}
+
+\subsection*{1. Kugelkoordinaten (3D)}
+\textbf{Allgemeines Volumenelement:}
+\[
+dV = r^2 \sin(\theta) \, d\theta \, d\phi \, dr
+\]
+\textbf{Kugelvolumen:}
+\[
+V = \int_{0}^{R} \int_{0}^{\pi} \int_{0}^{2\pi} r^2 \sin(\theta) \, d\phi \, d\theta \, dr = \frac{4}{3}\pi R^3
+\]
+\textbf{Shortcut (Kugelschale bei reiner $r$-Abhängigkeit):}
+\begin{formulabox}
+	\[
+	dV = 4\pi r^2 \, dr
+	\]
+\end{formulabox}
+
+\subsection*{2. Zylinderkoordinaten (3D)}
+\textbf{Allgemeines Volumenelement:}
+\[
+dV = r \, dr \, d\phi \, dz
+\]
+\textbf{Zylindervolumen:}
+\[
+V = \int_{0}^{h} \int_{0}^{2\pi} \int_{0}^{R} r \, dr \, d\phi \, dz = \pi R^2 h
+\]
+\textbf{Shortcut (Zylinderschale bei reiner $r$-Abhängigkeit):}
+\begin{formulabox}
+	\[
+	dV = h \cdot 2\pi r \, dr
+	\]
+\end{formulabox}
+
+\subsection*{3. Ebene Polarkoordinaten (2D)}
+\textbf{Allgemeines Flächenelement:}
+\[
+dA = r \, dr \, d\phi
+\]
+\textbf{Shortcut (Ring bei reiner $r$-Abhängigkeit):}
+\begin{formulabox}
+	\[
+	dA = 2\pi r \, dr
+	\]
+\end{formulabox}
+
+\subsection*{4. Kartesische Koordinaten}
+\textbf{Volumen (3D):}
+\[
+dV = dx \, dy \, dz
+\]
+\textbf{Fläche (2D):}
+\[
+dA = dx \, dy
+\]
+
+\subsection*{5. Wichtige Linienelemente ($ds$) und Oberflächen ($A$)}
+\begin{itemize}
+	\item \textbf{Kreisbogen:}
+	\begin{formulabox}
+		\[
+		ds = r \, d\phi
+		\]
+	\end{formulabox}
+	
+	\item \textbf{Kugeloberfläche:}
+	\[
+	A = 4\pi r^2
+	\]
+	
+	\item \textbf{Kugelzone (fester Radius $R$):}
+	\[
+	dA = 2\pi R^2 \sin(\theta) \, d\theta
+	\]
+	
+	\item \textbf{Zylindermantel:}
+	\[
+	A = 2\pi r h
+	\]
+\end{itemize}
+
+\subsection*{6. Vektorelemente für Felder (z.\,B. Maxwell-Gleichungen)}
+\textbf{Vektor-Flächenelement:}
+\[
+d\vec{A} = dA \cdot \hat{n}
+\]
+(Der Normalenvektor $\hat{n}$ zeigt bei geschlossenen Hüllen immer nach aussen!) \\[1ex]
+\textbf{Vektor-Linienelement:} $d\vec{l}$ \\
+Zeigt in die gewählte Integrationsrichtung oder (bei Leitern) in Richtung der Stromdichte $\vec{j}$.
